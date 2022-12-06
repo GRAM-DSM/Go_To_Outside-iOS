@@ -22,6 +22,17 @@
 		4BFC7913293EECA4008BFD69 /* HttpClient+httpHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC7912293EECA4008BFD69 /* HttpClient+httpHeader.swift */; };
 		4BFC7915293EED84008BFD69 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC7914293EED84008BFD69 /* Header.swift */; };
 		4BFC7918293EFD78008BFD69 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 4BFC7917293EFD78008BFD69 /* SwiftKeychainWrapper */; };
+		907C9829293F70A2009CBD8C /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907C9828293F70A2009CBD8C /* SelectView.swift */; };
+		907C982B293F82DC009CBD8C /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907C982A293F82DC009CBD8C /* SignUpView.swift */; };
+		907C982D293F887E009CBD8C /* SignUpPWView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907C982C293F887E009CBD8C /* SignUpPWView.swift */; };
+		90C8B972293F53160027355A /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8B971293F53160027355A /* Fonts.swift */; };
+		90C8B97A293F536B0027355A /* NotoSansKR-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90C8B974293F536B0027355A /* NotoSansKR-Black.otf */; };
+		90C8B97B293F536B0027355A /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90C8B975293F536B0027355A /* NotoSansKR-Bold.otf */; };
+		90C8B97C293F536B0027355A /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90C8B976293F536B0027355A /* NotoSansKR-Regular.otf */; };
+		90C8B97D293F536B0027355A /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90C8B977293F536B0027355A /* NotoSansKR-Medium.otf */; };
+		90C8B97E293F536B0027355A /* NotoSansKR-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90C8B978293F536B0027355A /* NotoSansKR-Thin.otf */; };
+		90C8B97F293F536B0027355A /* NotoSansKR-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90C8B979293F536B0027355A /* NotoSansKR-Light.otf */; };
+		90C8B982293F5CBD0027355A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8B981293F5CBD0027355A /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +51,17 @@
 		4BFC7910293EE891008BFD69 /* HttpClient+httpTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HttpClient+httpTask.swift"; sourceTree = "<group>"; };
 		4BFC7912293EECA4008BFD69 /* HttpClient+httpHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HttpClient+httpHeader.swift"; sourceTree = "<group>"; };
 		4BFC7914293EED84008BFD69 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		907C9828293F70A2009CBD8C /* SelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectView.swift; sourceTree = "<group>"; };
+		907C982A293F82DC009CBD8C /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		907C982C293F887E009CBD8C /* SignUpPWView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPWView.swift; sourceTree = "<group>"; };
+		90C8B971293F53160027355A /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		90C8B974293F536B0027355A /* NotoSansKR-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Black.otf"; path = "../../../../../../../../Downloads/Noto_Sans_KR/NotoSansKR-Black.otf"; sourceTree = "<group>"; };
+		90C8B975293F536B0027355A /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Bold.otf"; path = "../../../../../../../../Downloads/Noto_Sans_KR/NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
+		90C8B976293F536B0027355A /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Regular.otf"; path = "../../../../../../../../Downloads/Noto_Sans_KR/NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
+		90C8B977293F536B0027355A /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Medium.otf"; path = "../../../../../../../../Downloads/Noto_Sans_KR/NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
+		90C8B978293F536B0027355A /* NotoSansKR-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Thin.otf"; path = "../../../../../../../../Downloads/Noto_Sans_KR/NotoSansKR-Thin.otf"; sourceTree = "<group>"; };
+		90C8B979293F536B0027355A /* NotoSansKR-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Light.otf"; path = "../../../../../../../../Downloads/Noto_Sans_KR/NotoSansKR-Light.otf"; sourceTree = "<group>"; };
+		90C8B981293F5CBD0027355A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				4B3BB32C2939CE0400E8B5FE /* GoToOutsideApp.swift */,
+				4B3BB32E2939CE0400E8B5FE /* ContentView.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -103,8 +126,8 @@
 		4B3BB33C2939CE7800E8B5FE /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				4B3BB32E2939CE0400E8B5FE /* ContentView.swift */,
 				4BFC78F8293ED74C008BFD69 /* Login */,
+				90C8B980293F596B0027355A /* SignUp */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -160,8 +183,10 @@
 		4BFC7900293ED8ED008BFD69 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				90C8B973293F53190027355A /* Font */,
 				4B5C88162939CF35003F224E /* Preview Content */,
 				4B3BB3302939CE0400E8B5FE /* Assets.xcassets */,
+				90C8B981293F5CBD0027355A /* Colors.swift */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -204,6 +229,46 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		90C8B973293F53190027355A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				90C8B974293F536B0027355A /* NotoSansKR-Black.otf */,
+				90C8B975293F536B0027355A /* NotoSansKR-Bold.otf */,
+				90C8B979293F536B0027355A /* NotoSansKR-Light.otf */,
+				90C8B977293F536B0027355A /* NotoSansKR-Medium.otf */,
+				90C8B976293F536B0027355A /* NotoSansKR-Regular.otf */,
+				90C8B978293F536B0027355A /* NotoSansKR-Thin.otf */,
+				90C8B971293F53160027355A /* Fonts.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		90C8B980293F596B0027355A /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				90C8B984293F5EB00027355A /* View */,
+				90C8B983293F5EAC0027355A /* ViewModel */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		90C8B983293F5EAC0027355A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		90C8B984293F5EB00027355A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				907C9828293F70A2009CBD8C /* SelectView.swift */,
+				907C982A293F82DC009CBD8C /* SignUpView.swift */,
+				907C982C293F887E009CBD8C /* SignUpPWView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -211,6 +276,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B3BB3372939CE0400E8B5FE /* Build configuration list for PBXNativeTarget "GoToOutside" */;
 			buildPhases = (
+				90C8B970293F4FFB0027355A /* SwiftLint Script */,
 				4B3BB3252939CE0400E8B5FE /* Sources */,
 				4B3BB3262939CE0400E8B5FE /* Frameworks */,
 				4B3BB3272939CE0400E8B5FE /* Resources */,
@@ -270,12 +336,39 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90C8B97D293F536B0027355A /* NotoSansKR-Medium.otf in Resources */,
+				90C8B97E293F536B0027355A /* NotoSansKR-Thin.otf in Resources */,
+				90C8B97F293F536B0027355A /* NotoSansKR-Light.otf in Resources */,
+				90C8B97A293F536B0027355A /* NotoSansKR-Black.otf in Resources */,
 				4B5C88182939CF35003F224E /* Preview Assets.xcassets in Resources */,
+				90C8B97B293F536B0027355A /* NotoSansKR-Bold.otf in Resources */,
 				4B3BB3312939CE0400E8B5FE /* Assets.xcassets in Resources */,
+				90C8B97C293F536B0027355A /* NotoSansKR-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		90C8B970293F4FFB0027355A /* SwiftLint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4B3BB3252939CE0400E8B5FE /* Sources */ = {
@@ -283,13 +376,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BFC78FF293ED7A5008BFD69 /* LoginViewModel.swift in Sources */,
+				907C982B293F82DC009CBD8C /* SignUpView.swift in Sources */,
 				4BFC790F293EE723008BFD69 /* HttpClient+httpMethod.swift in Sources */,
 				4BFC78FA293ED776008BFD69 /* LoginView.swift in Sources */,
 				4BFC7911293EE891008BFD69 /* HttpClient+httpTask.swift in Sources */,
+				907C982D293F887E009CBD8C /* SignUpPWView.swift in Sources */,
 				4B3BB32F2939CE0400E8B5FE /* ContentView.swift in Sources */,
 				4BFC7915293EED84008BFD69 /* Header.swift in Sources */,
 				4BFC790D293EDC80008BFD69 /* HttpClient+httpPath.swift in Sources */,
 				4BFC7907293EDA19008BFD69 /* MoyaService.swift in Sources */,
+				90C8B982293F5CBD0027355A /* Colors.swift in Sources */,
+				90C8B972293F53160027355A /* Fonts.swift in Sources */,
+				907C9829293F70A2009CBD8C /* SelectView.swift in Sources */,
 				4BFC7913293EECA4008BFD69 /* HttpClient+httpHeader.swift in Sources */,
 				4BFC790A293EDAAB008BFD69 /* BaceURL.swift in Sources */,
 				4B3BB32D2939CE0400E8B5FE /* GoToOutsideApp.swift in Sources */,
