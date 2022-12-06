@@ -12,6 +12,16 @@
 		4B3BB3312939CE0400E8B5FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B3BB3302939CE0400E8B5FE /* Assets.xcassets */; };
 		4B5C88182939CF35003F224E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B5C88172939CF35003F224E /* Preview Assets.xcassets */; };
 		4B5C881B2939CF9B003F224E /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 4B5C881A2939CF9B003F224E /* Moya */; };
+		4BFC78FA293ED776008BFD69 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC78F9293ED776008BFD69 /* LoginView.swift */; };
+		4BFC78FF293ED7A5008BFD69 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC78FE293ED7A5008BFD69 /* LoginViewModel.swift */; };
+		4BFC7907293EDA19008BFD69 /* MoyaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC7906293EDA19008BFD69 /* MoyaService.swift */; };
+		4BFC790A293EDAAB008BFD69 /* BaceURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC7909293EDAAB008BFD69 /* BaceURL.swift */; };
+		4BFC790D293EDC80008BFD69 /* HttpClient+httpPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC790C293EDC80008BFD69 /* HttpClient+httpPath.swift */; };
+		4BFC790F293EE723008BFD69 /* HttpClient+httpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC790E293EE723008BFD69 /* HttpClient+httpMethod.swift */; };
+		4BFC7911293EE891008BFD69 /* HttpClient+httpTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC7910293EE891008BFD69 /* HttpClient+httpTask.swift */; };
+		4BFC7913293EECA4008BFD69 /* HttpClient+httpHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC7912293EECA4008BFD69 /* HttpClient+httpHeader.swift */; };
+		4BFC7915293EED84008BFD69 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC7914293EED84008BFD69 /* Header.swift */; };
+		4BFC7918293EFD78008BFD69 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 4BFC7917293EFD78008BFD69 /* SwiftKeychainWrapper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +31,15 @@
 		4B3BB3302939CE0400E8B5FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B5C88172939CF35003F224E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4B5C881E2939D087003F224E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BFC78F9293ED776008BFD69 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4BFC78FE293ED7A5008BFD69 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		4BFC7906293EDA19008BFD69 /* MoyaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaService.swift; sourceTree = "<group>"; };
+		4BFC7909293EDAAB008BFD69 /* BaceURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaceURL.swift; sourceTree = "<group>"; };
+		4BFC790C293EDC80008BFD69 /* HttpClient+httpPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HttpClient+httpPath.swift"; sourceTree = "<group>"; };
+		4BFC790E293EE723008BFD69 /* HttpClient+httpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HttpClient+httpMethod.swift"; sourceTree = "<group>"; };
+		4BFC7910293EE891008BFD69 /* HttpClient+httpTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HttpClient+httpTask.swift"; sourceTree = "<group>"; };
+		4BFC7912293EECA4008BFD69 /* HttpClient+httpHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HttpClient+httpHeader.swift"; sourceTree = "<group>"; };
+		4BFC7914293EED84008BFD69 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BFC7918293EFD78008BFD69 /* SwiftKeychainWrapper in Frameworks */,
 				4B5C881B2939CF9B003F224E /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +74,8 @@
 		4B3BB32B2939CE0400E8B5FE /* GoToOutside */ = {
 			isa = PBXGroup;
 			children = (
+				4BFC7901293ED9BD008BFD69 /* Service */,
+				4BFC7900293ED8ED008BFD69 /* Resource */,
 				4B3BB33E2939CEE500E8B5FE /* SupportFile */,
 				4B3BB33A2939CE2800E8B5FE /* Source */,
 			);
@@ -73,9 +95,7 @@
 		4B3BB33B2939CE6700E8B5FE /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				4B5C88162939CF35003F224E /* Preview Content */,
 				4B3BB32C2939CE0400E8B5FE /* GoToOutsideApp.swift */,
-				4B3BB3302939CE0400E8B5FE /* Assets.xcassets */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -84,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				4B3BB32E2939CE0400E8B5FE /* ContentView.swift */,
+				4BFC78F8293ED74C008BFD69 /* Login */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -111,6 +132,78 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		4BFC78F8293ED74C008BFD69 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4BFC78FC293ED783008BFD69 /* ViewModel */,
+				4BFC78FB293ED779008BFD69 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4BFC78FB293ED779008BFD69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4BFC78F9293ED776008BFD69 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4BFC78FC293ED783008BFD69 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4BFC78FE293ED7A5008BFD69 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4BFC7900293ED8ED008BFD69 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				4B5C88162939CF35003F224E /* Preview Content */,
+				4B3BB3302939CE0400E8B5FE /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		4BFC7901293ED9BD008BFD69 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4BFC7902293ED9C4008BFD69 /* Network */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4BFC7902293ED9C4008BFD69 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4BFC7905293ED9EA008BFD69 /* Header */,
+				4BFC7903293ED9D2008BFD69 /* HttpClient */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4BFC7903293ED9D2008BFD69 /* HttpClient */ = {
+			isa = PBXGroup;
+			children = (
+				4BFC7906293EDA19008BFD69 /* MoyaService.swift */,
+				4BFC7909293EDAAB008BFD69 /* BaceURL.swift */,
+				4BFC790C293EDC80008BFD69 /* HttpClient+httpPath.swift */,
+				4BFC790E293EE723008BFD69 /* HttpClient+httpMethod.swift */,
+				4BFC7910293EE891008BFD69 /* HttpClient+httpTask.swift */,
+				4BFC7912293EECA4008BFD69 /* HttpClient+httpHeader.swift */,
+			);
+			path = HttpClient;
+			sourceTree = "<group>";
+		};
+		4BFC7905293ED9EA008BFD69 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				4BFC7914293EED84008BFD69 /* Header.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,6 +222,7 @@
 			name = GoToOutside;
 			packageProductDependencies = (
 				4B5C881A2939CF9B003F224E /* Moya */,
+				4BFC7917293EFD78008BFD69 /* SwiftKeychainWrapper */,
 			);
 			productName = GoToOutside;
 			productReference = 4B3BB3292939CE0400E8B5FE /* GoToOutside.app */;
@@ -160,6 +254,7 @@
 			mainGroup = 4B3BB3202939CE0400E8B5FE;
 			packageReferences = (
 				4B5C88192939CF9B003F224E /* XCRemoteSwiftPackageReference "Moya" */,
+				4BFC7916293EFD78008BFD69 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
 			);
 			productRefGroup = 4B3BB32A2939CE0400E8B5FE /* Products */;
 			projectDirPath = "";
@@ -187,7 +282,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BFC78FF293ED7A5008BFD69 /* LoginViewModel.swift in Sources */,
+				4BFC790F293EE723008BFD69 /* HttpClient+httpMethod.swift in Sources */,
+				4BFC78FA293ED776008BFD69 /* LoginView.swift in Sources */,
+				4BFC7911293EE891008BFD69 /* HttpClient+httpTask.swift in Sources */,
 				4B3BB32F2939CE0400E8B5FE /* ContentView.swift in Sources */,
+				4BFC7915293EED84008BFD69 /* Header.swift in Sources */,
+				4BFC790D293EDC80008BFD69 /* HttpClient+httpPath.swift in Sources */,
+				4BFC7907293EDA19008BFD69 /* MoyaService.swift in Sources */,
+				4BFC7913293EECA4008BFD69 /* HttpClient+httpHeader.swift in Sources */,
+				4BFC790A293EDAAB008BFD69 /* BaceURL.swift in Sources */,
 				4B3BB32D2939CE0400E8B5FE /* GoToOutsideApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,10 +420,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GoToOutside/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"GoToOutside/Resource/Preview Content\"";
+				DEVELOPMENT_TEAM = 629Q9H7922;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GoToOutside/Info.plist;
+				INFOPLIST_FILE = GoToOutside/SupportFile/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -345,10 +450,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GoToOutside/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"GoToOutside/Resource/Preview Content\"";
+				DEVELOPMENT_TEAM = 629Q9H7922;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GoToOutside/Info.plist;
+				INFOPLIST_FILE = GoToOutside/SupportFile/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -399,6 +505,14 @@
 				kind = branch;
 			};
 		};
+		4BFC7916293EFD78008BFD69 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -406,6 +520,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4B5C88192939CF9B003F224E /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = Moya;
+		};
+		4BFC7917293EFD78008BFD69 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BFC7916293EFD78008BFD69 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
