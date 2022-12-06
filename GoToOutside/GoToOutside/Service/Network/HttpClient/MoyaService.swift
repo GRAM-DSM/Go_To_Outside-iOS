@@ -2,8 +2,7 @@ import Foundation
 import Moya
 
 enum HttpService {
-    
-    //Auth
+    // Auth
     case login(
         accountID: String,
         password: String
@@ -22,8 +21,7 @@ enum HttpService {
         group: String,
         code: String
     )
-    
-    //pass
+    // Pass
     case requestGoToOutside(
         reason: String,
         outingTime: String
@@ -34,7 +32,6 @@ enum HttpService {
         incomingTime: String,
         outsideID: Int
     )
-    
 }
 
 extension HttpService: TargetType {
@@ -42,5 +39,5 @@ extension HttpService: TargetType {
     var path: String { httpPath() }
     var method: Moya.Method { httpMethod() }
     var task: Moya.Task { httpTask() }
-    var headers: [String : String]? { httpHeader() }
+    var headers: [String: String]? { httpHeader() }
 }
