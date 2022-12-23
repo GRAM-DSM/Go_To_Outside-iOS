@@ -22,37 +22,21 @@ struct SelectView: View {
                     .padding(.bottom, 71)
                 HStack {
                     Spacer()
-                    NavigationLink(destination: EmptyView()) {
-                        VStack(spacing: 0) {
-                            Image("Student")
-                            Text("학생")
-                                .foregroundColor(.black)
-                                .font(.custom("NotoSansKR-Medium", size: 18))
-                        }
-                        .frame(width: 150, height: 150)
-                        .background(Color.signUpSelector)
-                        .cornerRadius(10)
-                        .padding(1)
-                        .background(Color.gray1)
-                        .cornerRadius(10)
-                        .padding(10)
-                    }
+                    ImageButtonView(
+                        title: "학생",
+                        font: .custom("NotoSansKR-Medium", size: 18),
+                        backgroundColor: Color.gray1,
+                        image: Image("Student"),
+                        action: {}
+                    )
                     Spacer()
-                    NavigationLink(destination: SignUpView()) {
-                        VStack(spacing: 0) {
-                            Image("Teacher")
-                            Text("학생")
-                                .foregroundColor(.black)
-                                .font(.custom("NotoSansKR-Medium", size: 18))
-                        }
-                        .frame(width: 150, height: 150)
-                        .background(Color.signUpSelector)
-                        .cornerRadius(10)
-                        .padding(1)
-                        .background(Color.gray1)
-                        .cornerRadius(10)
-                        .padding(10)
-                    }
+                    ImageButtonView(
+                        title: "교사",
+                        font: .custom("NotoSansKR-Medium", size: 18),
+                        backgroundColor: Color.gray1,
+                        image: Image("Teacher"),
+                        action: {}
+                    )
                     Spacer()
                 }
                 Spacer()
