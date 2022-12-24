@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct SignUpPWView: View {
-    @StateObject var signupViewModel = SignupViewModel()
+struct StudentSignUpView: View {
+    @StateObject var signUpViewModel = SignUpViewModel()
     var body: some View {
         ZStack {
             VStack(alignment: .leading, spacing: 0) {
@@ -17,25 +17,30 @@ struct SignUpPWView: View {
                 Text("회원가입")
                     .foregroundColor(.black)
                     .font(.custom("NotoSansKR-Light", size: 40))
-                Text("비밀번호 입력")
+                Text("어떻게 부를까요?")
                     .foregroundColor(.black)
                     .font(.custom("NotoSansKR-Bold", size: 40))
-                    .padding(.bottom, 71)
+                    .padding(.bottom, 50)
                 Group {
                     VStack(spacing: 17) {
                         TextFieldView(
-                            text: $signupViewModel.accountPassword,
-                            placeholder: "비밀번호",
-                            font: .custom("NotoSansKR-Light", size: 18),
-                            indicator: "20글자 이상의 비밀번호로 입력해주세요 :)",
-                            isSecurity: true
+                            text: $signUpViewModel.accountID,
+                            placeholder: "아이디",
+                            indicator: "기억하기 쉬운 아이디로 정해주세요 :)",
+                            font: .custom("NotoSansKR-Light", size: 18)
                         )
                         TextFieldView(
-                            text: $signupViewModel.accountPassword,
-                            placeholder: "비밀번호 확인",
+                            text: $signUpViewModel.accountName,
+                            placeholder: "이름",
+                            indicator: "본인의 이름으로 작성해 주세요!",
+                            font: .custom("NotoSansKR-Light", size: 18)
+                        )
+                        TextFieldView(
+                            text: $signUpViewModel.accountNumber,
+                            placeholder: "학번",
+                            indicator: "학교 학번 4자리로 입력해주세요!",
                             font: .custom("NotoSansKR-Light", size: 18),
-                            indicator: "위의 비밀번호와 동일한 비밀번호를 입력해 주세요!",
-                            isSecurity: true
+                            keyboardType: .numberPad
                         )
                     }
                 }
@@ -43,7 +48,7 @@ struct SignUpPWView: View {
                 NavigationLink(destination: EmptyView()) {
                     HStack {
                         Spacer()
-                        Text("회원가입")
+                        Text("계속하기")
                             .foregroundColor(.white)
                             .font(.custom("NotoSansKR-Bold", size: 20))
                             .padding(.vertical, 14)
@@ -60,8 +65,8 @@ struct SignUpPWView: View {
     }
 }
 
-struct SignUpPWView_Previews: PreviewProvider {
+struct StudentSignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpPWView()
+        StudentSignUpView()
     }
 }

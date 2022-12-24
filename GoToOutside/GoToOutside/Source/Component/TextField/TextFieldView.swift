@@ -3,21 +3,24 @@ import SwiftUI
 struct TextFieldView: View {
     @Binding var text: String
     var placeholder: String = ""
-    var font: Font
     var indicator: String
+    var font: Font
+    var keyboardType: UIKeyboardType
     var isSecurity: Bool
     @State var isView: Bool = false
     init(
         text: Binding<String>,
         placeholder: String,
-        font: Font,
         indicator: String = "",
+        font: Font,
+        keyboardType: UIKeyboardType = .default,
         isSecurity: Bool = false
     ) {
         self._text = text
         self.placeholder = placeholder
-        self.font = font
         self.indicator = indicator
+        self.font = font
+        self.keyboardType = keyboardType
         self.isSecurity = isSecurity
     }
     var body: some View {
@@ -25,10 +28,16 @@ struct TextFieldView: View {
             HStack {
                 if isSecurity && !isView {
                     SecureField(placeholder, text: $text)
+                        .keyboardType(keyboardType)
+                        .autocorrectionDisabled(true)
+                        .autocapitalization(.none)
                         .font(font)
                         .padding(.bottom, 4.5)
                 } else {
                     TextField(placeholder, text: $text)
+                        .keyboardType(keyboardType)
+                        .autocorrectionDisabled(true)
+                        .autocapitalization(.none)
                         .font(font)
                         .padding(.bottom, 3)
                 }
@@ -60,8 +69,8 @@ struct TextFieldView_Previews: PreviewProvider {
         TextFieldView(
             text: .constant("안녕하십니까"),
             placeholder: "아이디",
-            font: .custom("NotoSansKR-Light", size: 18),
             indicator: "20글자 이상의 비밀번호로 입력해주세요 :)",
+            font: .custom("NotoSansKR-Light", size: 18),
             isSecurity: true
         )
     }

@@ -1,14 +1,14 @@
 //
-//  SignUpView.swift
+//  TeacherSignupView.swift
 //  GoToOutside
 //
-//  Created by 홍승재 on 2022/12/06.
+//  Created by 조병진 on 2022/12/24.
 //
 
 import SwiftUI
 
-struct SignUpView: View {
-    @StateObject var signupViewModel = SignupViewModel()
+struct TeacherSignUpView: View {
+    @StateObject var signUpViewModel = SignUpViewModel()
     var body: some View {
         ZStack {
             VStack(alignment: .leading, spacing: 0) {
@@ -24,22 +24,16 @@ struct SignUpView: View {
                 Group {
                     VStack(spacing: 17) {
                         TextFieldView(
-                            text: $signupViewModel.accountID,
+                            text: $signUpViewModel.accountID,
                             placeholder: "아이디",
-                            font: .custom("NotoSansKR-Light", size: 18),
-                            indicator: "기억하기 쉬운 아이디로 정해주세요 :)"
+                            indicator: "기억하기 쉬운 아이디로 정해주세요 :)",
+                            font: .custom("NotoSansKR-Light", size: 18)
                         )
                         TextFieldView(
-                            text: $signupViewModel.accountName,
+                            text: $signUpViewModel.accountName,
                             placeholder: "이름",
-                            font: .custom("NotoSansKR-Light", size: 18),
-                            indicator: "본인의 이름으로 작성해 주세요!"
-                        )
-                        TextFieldView(
-                            text: $signupViewModel.accountNumber,
-                            placeholder: "학번",
-                            font: .custom("NotoSansKR-Light", size: 18),
-                            indicator: "학교 학번 4자리로 입력해주세요!"
+                            indicator: "본인의 이름으로 작성해 주세요!",
+                            font: .custom("NotoSansKR-Light", size: 18)
                         )
                     }
                 }
@@ -64,8 +58,8 @@ struct SignUpView: View {
     }
 }
 
-struct SignUpView_Previews: PreviewProvider {
+struct TeacherSignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpView()
+        TeacherSignUpView()
     }
 }
