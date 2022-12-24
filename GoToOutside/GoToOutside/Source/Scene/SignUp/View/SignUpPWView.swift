@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct SignUpPWView: View {
-    @State private var id = ""
-    @State private var name = ""
-    @State private var number = ""
+    @StateObject var signupViewModel = SignupViewModel()
     var body: some View {
         ZStack {
             VStack(alignment: .leading, spacing: 0) {
@@ -24,32 +22,22 @@ struct SignUpPWView: View {
                     .font(.custom("NotoSansKR-Bold", size: 40))
                     .padding(.bottom, 71)
                 Group {
-                    SecureField("비밀번호", text: $id)
-                        .autocapitalization(.none)
-                        .disableAutocorrection(true)
-                        .foregroundColor(.black)
-                        .font(.custom("NotoSansKR-Light", size: 18))
-                        .padding(.bottom, 7)
-                    Rectangle()
-                        .frame(height: 2)
-                        .padding(.bottom, 9)
-                    Text("20글자 이상의 비밀번호로 입력해주세요 :)")
-                        .foregroundColor(.gray1)
-                        .font(.custom("NotoSansKR-Light", size: 11))
-                        .padding(.bottom, 17)
-                    SecureField("비밀번호 확인", text: $name)
-                        .autocapitalization(.none)
-                        .disableAutocorrection(true)
-                        .foregroundColor(.black)
-                        .font(.custom("NotoSansKR-Light", size: 18))
-                        .padding(.bottom, 7)
-                    Rectangle()
-                        .frame(height: 2)
-                        .padding(.bottom, 9)
-                    Text("위의 비밀번호와 동일한 비밀번호를 입력해 주세요!")
-                        .foregroundColor(.gray1)
-                        .font(.custom("NotoSansKR-Light", size: 11))
-                        .padding(.bottom, 17)
+                    VStack(spacing: 17) {
+                        TextFieldView(
+                            text: $signupViewModel.accountPassword,
+                            placeholder: "비밀번호",
+                            font: .custom("NotoSansKR-Light", size: 18),
+                            indicator: "20글자 이상의 비밀번호로 입력해주세요 :)",
+                            isSecurity: true
+                        )
+                        TextFieldView(
+                            text: $signupViewModel.accountPassword,
+                            placeholder: "비밀번호 확인",
+                            font: .custom("NotoSansKR-Light", size: 18),
+                            indicator: "위의 비밀번호와 동일한 비밀번호를 입력해 주세요!",
+                            isSecurity: true
+                        )
+                    }
                 }
                 Spacer()
                 NavigationLink(destination: EmptyView()) {

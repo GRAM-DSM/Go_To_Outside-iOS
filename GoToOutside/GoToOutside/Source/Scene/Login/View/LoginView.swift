@@ -1,10 +1,10 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var id = ""
-    @State private var password = ""
+    @StateObject var loginViewModel = LoginViewModel()
     var body: some View {
         ZStack {
+            NavigationLink(destination: SignUpView(), isActive: $loginViewModel.isSuccess) { EmptyView() }
             VStack(alignment: .leading, spacing: 0) {
                 Spacer()
                     .frame(height: 113)
@@ -15,29 +15,25 @@ struct LoginView: View {
                     .foregroundColor(.black)
                     .font(.custom("NotoSansKR-Bold", size: 40))
                     .padding(.bottom, 71)
-                TextField("아이디", text: $id)
-                    .autocapitalization(.none)
-                    .disableAutocorrection(true)
-                    .foregroundColor(.black)
-                    .font(.custom("NotoSansKR-Light", size: 18))
-                    .padding(.bottom, 7)
-                Rectangle()
-                    .frame(height: 2)
-                    .padding(.bottom, 43)
-                SecureField("비밀번호", text: $password)
-                    .autocapitalization(.none)
-                    .disableAutocorrection(true)
-                    .foregroundColor(.black)
-                    .font(.custom("NotoSansKR-Light", size: 18))
-                    .padding(.bottom, 7)
-                Rectangle()
-                    .frame(height: 2)
+                TextFieldView(
+                    text: $loginViewModel.accountID,
+                    placeholder: "아이디",
+                    font: .custom("NotoSansKR-Light", size: 18)
+                )
+                Spacer()
+                    .frame(height: 43)
+                TextFieldView(
+                    text: $loginViewModel.password,
+                    placeholder: "비밀번호",
+                    font: .custom("NotoSansKR-Light", size: 18),
+                    isSecurity: true
+                )
                 Spacer()
                 NavigationLink(destination: SelectView()) {
                     HStack {
                         Spacer()
                         Text("계정이 없다면?")
-                            .foregroundColor(.gray1)
+                            .foregroundColor(.gray3)
                             .font(.custom("NotoSansKR-Regular", size: 18))
                         Text("회원가입")
                             .foregroundColor(.black)
@@ -49,19 +45,13 @@ struct LoginView: View {
                     }
                     .padding(.bottom, 29)
                 }
-                NavigationLink(destination: EmptyView()) {
-                    HStack {
-                        Spacer()
-                        Text("로그인")
-                            .foregroundColor(.white)
-                            .font(.custom("NotoSansKR-Bold", size: 20))
-                            .padding(.vertical, 14)
-                        Spacer()
+                RectangleButtonView(
+                    title: "로그인",
+                    font: .custom("NotoSansKR-Bold", size: 20),
+                    action: {
+                        loginViewModel.login()
                     }
-                    .background(.black)
-                    .cornerRadius(12)
-                }
-                .padding(.bottom, 10)
+                )
             }
         }
         .padding(.horizontal, 16)

@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct SignUpView: View {
-    @State private var id = ""
-    @State private var name = ""
-    @State private var number = ""
+    @StateObject var signupViewModel = SignupViewModel()
     var body: some View {
         ZStack {
             VStack(alignment: .leading, spacing: 0) {
@@ -22,48 +20,28 @@ struct SignUpView: View {
                 Text("어떻게 부를까요?")
                     .foregroundColor(.black)
                     .font(.custom("NotoSansKR-Bold", size: 40))
-                    .padding(.bottom, 71)
+                    .padding(.bottom, 50)
                 Group {
-                    TextField("아이디", text: $id)
-                        .autocapitalization(.none)
-                        .disableAutocorrection(true)
-                        .foregroundColor(.black)
-                        .font(.custom("NotoSansKR-Light", size: 18))
-                        .padding(.bottom, 7)
-                    Rectangle()
-                        .frame(height: 2)
-                        .padding(.bottom, 9)
-                    Text("기억하기 쉬운 아이디로 정해주세요 :)")
-                        .foregroundColor(.gray1)
-                        .font(.custom("NotoSansKR-Light", size: 11))
-                        .padding(.bottom, 17)
-                    TextField("이름", text: $name)
-                        .autocapitalization(.none)
-                        .disableAutocorrection(true)
-                        .foregroundColor(.black)
-                        .font(.custom("NotoSansKR-Light", size: 18))
-                        .padding(.bottom, 7)
-                    Rectangle()
-                        .frame(height: 2)
-                        .padding(.bottom, 9)
-                    Text("본인의 이름으로 작성해 주세요!")
-                        .foregroundColor(.gray1)
-                        .font(.custom("NotoSansKR-Light", size: 11))
-                        .padding(.bottom, 17)
-                    TextField("아이디", text: $number)
-                        .keyboardType(.numberPad)
-                        .autocapitalization(.none)
-                        .disableAutocorrection(true)
-                        .foregroundColor(.black)
-                        .font(.custom("NotoSansKR-Light", size: 18))
-                        .padding(.bottom, 7)
-                    Rectangle()
-                        .frame(height: 2)
-                        .padding(.bottom, 9)
-                    Text("학교 학번 4자리로 입력해주세요!")
-                        .foregroundColor(.gray1)
-                        .font(.custom("NotoSansKR-Light", size: 11))
-                        .padding(.bottom, 17)
+                    VStack(spacing: 17) {
+                        TextFieldView(
+                            text: $signupViewModel.accountID,
+                            placeholder: "아이디",
+                            font: .custom("NotoSansKR-Light", size: 18),
+                            indicator: "기억하기 쉬운 아이디로 정해주세요 :)"
+                        )
+                        TextFieldView(
+                            text: $signupViewModel.accountName,
+                            placeholder: "이름",
+                            font: .custom("NotoSansKR-Light", size: 18),
+                            indicator: "본인의 이름으로 작성해 주세요!"
+                        )
+                        TextFieldView(
+                            text: $signupViewModel.accountNumber,
+                            placeholder: "학번",
+                            font: .custom("NotoSansKR-Light", size: 18),
+                            indicator: "학교 학번 4자리로 입력해주세요!"
+                        )
+                    }
                 }
                 Spacer()
                 NavigationLink(destination: EmptyView()) {
