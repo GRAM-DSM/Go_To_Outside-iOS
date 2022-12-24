@@ -4,7 +4,7 @@ struct LoginView: View {
     @StateObject var loginViewModel = LoginViewModel()
     var body: some View {
         ZStack {
-            NavigationLink(destination: SignUpView(), isActive: $loginViewModel.isSuccess) { EmptyView() }
+            NavigationLink(destination: StudentSignUpView(), isActive: $loginViewModel.isSuccess) { EmptyView() }
             VStack(alignment: .leading, spacing: 0) {
                 Spacer()
                     .frame(height: 113)
