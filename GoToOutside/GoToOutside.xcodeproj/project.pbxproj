@@ -15,7 +15,11 @@
 		4B665A8229551D650005C527 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B665A8129551D650005C527 /* TextFieldView.swift */; };
 		4B665A882955FB910005C527 /* RectangleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B665A872955FB910005C527 /* RectangleButtonView.swift */; };
 		4B665A8A2955FE1A0005C527 /* ImageButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B665A892955FE1A0005C527 /* ImageButtonView.swift */; };
-		4B665A8D295607840005C527 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B665A8C295607840005C527 /* SignupViewModel.swift */; };
+		4B665A9129567E070005C527 /* TeacherSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B665A9029567E070005C527 /* TeacherSignUpView.swift */; };
+		4B665A9329567F0C0005C527 /* TeacherSignUpClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B665A9229567F0C0005C527 /* TeacherSignUpClassView.swift */; };
+		4B665A95295680320005C527 /* TeacherSignUpPWView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B665A94295680320005C527 /* TeacherSignUpPWView.swift */; };
+		4B665A97295680A50005C527 /* TeacherSignUpCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B665A96295680A50005C527 /* TeacherSignUpCodeView.swift */; };
+		4B665A9A295695540005C527 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B665A99295695540005C527 /* SignUpViewModel.swift */; };
 		4BFC78FA293ED776008BFD69 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC78F9293ED776008BFD69 /* LoginView.swift */; };
 		4BFC78FF293ED7A5008BFD69 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC78FE293ED7A5008BFD69 /* LoginViewModel.swift */; };
 		4BFC7907293EDA19008BFD69 /* MoyaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC7906293EDA19008BFD69 /* MoyaService.swift */; };
@@ -33,8 +37,8 @@
 		4BFFD1122940D4E0002BD993 /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BFFD10C2940D4E0002BD993 /* NotoSansKR-Bold.otf */; };
 		4BFFD1132940D4E0002BD993 /* NotoSansKR-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BFFD10D2940D4E0002BD993 /* NotoSansKR-Thin.otf */; };
 		907C9829293F70A2009CBD8C /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907C9828293F70A2009CBD8C /* SelectView.swift */; };
-		907C982B293F82DC009CBD8C /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907C982A293F82DC009CBD8C /* SignUpView.swift */; };
-		907C982D293F887E009CBD8C /* SignUpPWView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907C982C293F887E009CBD8C /* SignUpPWView.swift */; };
+		907C982B293F82DC009CBD8C /* StudentSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907C982A293F82DC009CBD8C /* StudentSignUpView.swift */; };
+		907C982D293F887E009CBD8C /* StudentSignUpPWView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907C982C293F887E009CBD8C /* StudentSignUpPWView.swift */; };
 		90C8B972293F53160027355A /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8B971293F53160027355A /* Fonts.swift */; };
 		90C8B982293F5CBD0027355A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8B981293F5CBD0027355A /* Colors.swift */; };
 /* End PBXBuildFile section */
@@ -49,7 +53,11 @@
 		4B665A8129551D650005C527 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		4B665A872955FB910005C527 /* RectangleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleButtonView.swift; sourceTree = "<group>"; };
 		4B665A892955FE1A0005C527 /* ImageButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButtonView.swift; sourceTree = "<group>"; };
-		4B665A8C295607840005C527 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		4B665A9029567E070005C527 /* TeacherSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherSignUpView.swift; sourceTree = "<group>"; };
+		4B665A9229567F0C0005C527 /* TeacherSignUpClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherSignUpClassView.swift; sourceTree = "<group>"; };
+		4B665A94295680320005C527 /* TeacherSignUpPWView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherSignUpPWView.swift; sourceTree = "<group>"; };
+		4B665A96295680A50005C527 /* TeacherSignUpCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherSignUpCodeView.swift; sourceTree = "<group>"; };
+		4B665A99295695540005C527 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpViewModel.swift; path = GoToOutside/Source/Scene/SignUp/View/Teacher/SignUpViewModel.swift; sourceTree = SOURCE_ROOT; };
 		4BFC78F9293ED776008BFD69 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4BFC78FE293ED7A5008BFD69 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		4BFC7906293EDA19008BFD69 /* MoyaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaService.swift; sourceTree = "<group>"; };
@@ -66,8 +74,8 @@
 		4BFFD10C2940D4E0002BD993 /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
 		4BFFD10D2940D4E0002BD993 /* NotoSansKR-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Thin.otf"; sourceTree = "<group>"; };
 		907C9828293F70A2009CBD8C /* SelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectView.swift; sourceTree = "<group>"; };
-		907C982A293F82DC009CBD8C /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
-		907C982C293F887E009CBD8C /* SignUpPWView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPWView.swift; sourceTree = "<group>"; };
+		907C982A293F82DC009CBD8C /* StudentSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentSignUpView.swift; sourceTree = "<group>"; };
+		907C982C293F887E009CBD8C /* StudentSignUpPWView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentSignUpPWView.swift; sourceTree = "<group>"; };
 		90C8B971293F53160027355A /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		90C8B981293F5CBD0027355A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,10 +182,30 @@
 			path = TextField;
 			sourceTree = "<group>";
 		};
-		4B665A8B295607640005C527 /* ViewModel */ = {
+		4B665A8E29567DE10005C527 /* Student */ = {
 			isa = PBXGroup;
 			children = (
-				4B665A8C295607840005C527 /* SignupViewModel.swift */,
+				907C982A293F82DC009CBD8C /* StudentSignUpView.swift */,
+				907C982C293F887E009CBD8C /* StudentSignUpPWView.swift */,
+			);
+			path = Student;
+			sourceTree = "<group>";
+		};
+		4B665A8F29567DEE0005C527 /* Teacher */ = {
+			isa = PBXGroup;
+			children = (
+				4B665A9029567E070005C527 /* TeacherSignUpView.swift */,
+				4B665A9229567F0C0005C527 /* TeacherSignUpClassView.swift */,
+				4B665A94295680320005C527 /* TeacherSignUpPWView.swift */,
+				4B665A96295680A50005C527 /* TeacherSignUpCodeView.swift */,
+			);
+			path = Teacher;
+			sourceTree = "<group>";
+		};
+		4B665A982956953C0005C527 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4B665A99295695540005C527 /* SignUpViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -273,7 +301,7 @@
 		90C8B980293F596B0027355A /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
-				4B665A8B295607640005C527 /* ViewModel */,
+				4B665A982956953C0005C527 /* ViewModel */,
 				90C8B984293F5EB00027355A /* View */,
 			);
 			path = SignUp;
@@ -282,9 +310,9 @@
 		90C8B984293F5EB00027355A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4B665A8F29567DEE0005C527 /* Teacher */,
+				4B665A8E29567DE10005C527 /* Student */,
 				907C9828293F70A2009CBD8C /* SelectView.swift */,
-				907C982A293F82DC009CBD8C /* SignUpView.swift */,
-				907C982C293F887E009CBD8C /* SignUpPWView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -396,24 +424,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BFC78FF293ED7A5008BFD69 /* LoginViewModel.swift in Sources */,
-				907C982B293F82DC009CBD8C /* SignUpView.swift in Sources */,
+				907C982B293F82DC009CBD8C /* StudentSignUpView.swift in Sources */,
 				4BFC790F293EE723008BFD69 /* HttpClient+httpMethod.swift in Sources */,
 				4B665A8A2955FE1A0005C527 /* ImageButtonView.swift in Sources */,
 				4BFC78FA293ED776008BFD69 /* LoginView.swift in Sources */,
 				4B665A8229551D650005C527 /* TextFieldView.swift in Sources */,
-				4B665A8D295607840005C527 /* SignupViewModel.swift in Sources */,
 				4BFC7911293EE891008BFD69 /* HttpClient+httpTask.swift in Sources */,
-				907C982D293F887E009CBD8C /* SignUpPWView.swift in Sources */,
+				907C982D293F887E009CBD8C /* StudentSignUpPWView.swift in Sources */,
 				4B3BB32F2939CE0400E8B5FE /* ContentView.swift in Sources */,
 				4B665A882955FB910005C527 /* RectangleButtonView.swift in Sources */,
+				4B665A9A295695540005C527 /* SignUpViewModel.swift in Sources */,
 				4BFC7915293EED84008BFD69 /* Header.swift in Sources */,
 				4BFC790D293EDC80008BFD69 /* HttpClient+httpPath.swift in Sources */,
+				4B665A95295680320005C527 /* TeacherSignUpPWView.swift in Sources */,
 				4BFC7907293EDA19008BFD69 /* MoyaService.swift in Sources */,
 				90C8B982293F5CBD0027355A /* Colors.swift in Sources */,
 				90C8B972293F53160027355A /* Fonts.swift in Sources */,
 				907C9829293F70A2009CBD8C /* SelectView.swift in Sources */,
 				4BFC7913293EECA4008BFD69 /* HttpClient+httpHeader.swift in Sources */,
 				4BFC790A293EDAAB008BFD69 /* BaceURL.swift in Sources */,
+				4B665A9129567E070005C527 /* TeacherSignUpView.swift in Sources */,
+				4B665A9329567F0C0005C527 /* TeacherSignUpClassView.swift in Sources */,
+				4B665A97295680A50005C527 /* TeacherSignUpCodeView.swift in Sources */,
 				4B3BB32D2939CE0400E8B5FE /* GoToOutsideApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
