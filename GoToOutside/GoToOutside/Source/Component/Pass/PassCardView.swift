@@ -107,7 +107,7 @@ struct PassCardView_Previews: PreviewProvider {
             cardData: PassCardLoaclModel(
                 name: "조병진",
                 number: "1117",
-                permitStatus: "WAITING",
+                permitStatus: "PERMIT",
                 resson: "배가 아파요..",
                 outingTime: "11:30",
                 incomingTime: "12:50",
