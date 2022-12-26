@@ -20,6 +20,11 @@
 		4B665A95295680320005C527 /* TeacherSignUpPWView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B665A94295680320005C527 /* TeacherSignUpPWView.swift */; };
 		4B665A97295680A50005C527 /* TeacherSignUpCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B665A96295680A50005C527 /* TeacherSignUpCodeView.swift */; };
 		4B665A9A295695540005C527 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B665A99295695540005C527 /* SignUpViewModel.swift */; };
+		4B665A9E29586BCA0005C527 /* PassCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B665A9D29586BCA0005C527 /* PassCheckView.swift */; };
+		4B665AA229586C800005C527 /* PassCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B665AA129586C800005C527 /* PassCardView.swift */; };
+		4B665AA5295872760005C527 /* View+cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B665AA4295872760005C527 /* View+cornerRadius.swift */; };
+		4B665AA829587AA70005C527 /* PassCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B665AA729587AA70005C527 /* PassCardModel.swift */; };
+		4B665AAD295898470005C527 /* PassCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B665AAC295898470005C527 /* PassCardViewModel.swift */; };
 		4BFC78FA293ED776008BFD69 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC78F9293ED776008BFD69 /* LoginView.swift */; };
 		4BFC78FF293ED7A5008BFD69 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC78FE293ED7A5008BFD69 /* LoginViewModel.swift */; };
 		4BFC7907293EDA19008BFD69 /* MoyaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC7906293EDA19008BFD69 /* MoyaService.swift */; };
@@ -58,6 +63,11 @@
 		4B665A94295680320005C527 /* TeacherSignUpPWView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherSignUpPWView.swift; sourceTree = "<group>"; };
 		4B665A96295680A50005C527 /* TeacherSignUpCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherSignUpCodeView.swift; sourceTree = "<group>"; };
 		4B665A99295695540005C527 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpViewModel.swift; path = GoToOutside/Source/Scene/SignUp/View/Teacher/SignUpViewModel.swift; sourceTree = SOURCE_ROOT; };
+		4B665A9D29586BCA0005C527 /* PassCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassCheckView.swift; sourceTree = "<group>"; };
+		4B665AA129586C800005C527 /* PassCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassCardView.swift; sourceTree = "<group>"; };
+		4B665AA4295872760005C527 /* View+cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+cornerRadius.swift"; sourceTree = "<group>"; };
+		4B665AA729587AA70005C527 /* PassCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassCardModel.swift; sourceTree = "<group>"; };
+		4B665AAC295898470005C527 /* PassCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassCardViewModel.swift; sourceTree = "<group>"; };
 		4BFC78F9293ED776008BFD69 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4BFC78FE293ED7A5008BFD69 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		4BFC7906293EDA19008BFD69 /* MoyaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaService.swift; sourceTree = "<group>"; };
@@ -123,6 +133,7 @@
 		4B3BB33A2939CE2800E8B5FE /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				4B665AA3295872390005C527 /* Extensions */,
 				4B665A7F29551D350005C527 /* Component */,
 				4B3BB33B2939CE6700E8B5FE /* Application */,
 				4B3BB33C2939CE7800E8B5FE /* Scene */,
@@ -142,6 +153,7 @@
 		4B3BB33C2939CE7800E8B5FE /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				4B665A9B29586B890005C527 /* PassCard */,
 				4BFC78F8293ED74C008BFD69 /* Login */,
 				90C8B980293F596B0027355A /* SignUp */,
 			);
@@ -167,6 +179,8 @@
 		4B665A7F29551D350005C527 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				4B665AA029586C660005C527 /* Pass */,
+				4B665A9F29586C5B0005C527 /* Button */,
 				4B665A8029551D3E0005C527 /* TextField */,
 			);
 			path = Component;
@@ -176,8 +190,6 @@
 			isa = PBXGroup;
 			children = (
 				4B665A8129551D650005C527 /* TextFieldView.swift */,
-				4B665A872955FB910005C527 /* RectangleButtonView.swift */,
-				4B665A892955FE1A0005C527 /* ImageButtonView.swift */,
 			);
 			path = TextField;
 			sourceTree = "<group>";
@@ -206,6 +218,65 @@
 			isa = PBXGroup;
 			children = (
 				4B665A99295695540005C527 /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4B665A9B29586B890005C527 /* PassCard */ = {
+			isa = PBXGroup;
+			children = (
+				4B665AA629587A980005C527 /* Model */,
+				4B665AA9295897F30005C527 /* ViewModel */,
+				4B665A9C29586BB40005C527 /* View */,
+			);
+			path = PassCard;
+			sourceTree = "<group>";
+		};
+		4B665A9C29586BB40005C527 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B665A9D29586BCA0005C527 /* PassCheckView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4B665A9F29586C5B0005C527 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				4B665A872955FB910005C527 /* RectangleButtonView.swift */,
+				4B665A892955FE1A0005C527 /* ImageButtonView.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		4B665AA029586C660005C527 /* Pass */ = {
+			isa = PBXGroup;
+			children = (
+				4B665AA129586C800005C527 /* PassCardView.swift */,
+			);
+			path = Pass;
+			sourceTree = "<group>";
+		};
+		4B665AA3295872390005C527 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4B665AA4295872760005C527 /* View+cornerRadius.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4B665AA629587A980005C527 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B665AA729587AA70005C527 /* PassCardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4B665AA9295897F30005C527 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4B665AAC295898470005C527 /* PassCardViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -427,12 +498,17 @@
 				907C982B293F82DC009CBD8C /* StudentSignUpView.swift in Sources */,
 				4BFC790F293EE723008BFD69 /* HttpClient+httpMethod.swift in Sources */,
 				4B665A8A2955FE1A0005C527 /* ImageButtonView.swift in Sources */,
+				4B665AA829587AA70005C527 /* PassCardModel.swift in Sources */,
+				4B665AAD295898470005C527 /* PassCardViewModel.swift in Sources */,
 				4BFC78FA293ED776008BFD69 /* LoginView.swift in Sources */,
+				4B665A9E29586BCA0005C527 /* PassCheckView.swift in Sources */,
 				4B665A8229551D650005C527 /* TextFieldView.swift in Sources */,
 				4BFC7911293EE891008BFD69 /* HttpClient+httpTask.swift in Sources */,
 				907C982D293F887E009CBD8C /* StudentSignUpPWView.swift in Sources */,
 				4B3BB32F2939CE0400E8B5FE /* ContentView.swift in Sources */,
+				4B665AA5295872760005C527 /* View+cornerRadius.swift in Sources */,
 				4B665A882955FB910005C527 /* RectangleButtonView.swift in Sources */,
+				4B665AA229586C800005C527 /* PassCardView.swift in Sources */,
 				4B665A9A295695540005C527 /* SignUpViewModel.swift in Sources */,
 				4BFC7915293EED84008BFD69 /* Header.swift in Sources */,
 				4BFC790D293EDC80008BFD69 /* HttpClient+httpPath.swift in Sources */,
