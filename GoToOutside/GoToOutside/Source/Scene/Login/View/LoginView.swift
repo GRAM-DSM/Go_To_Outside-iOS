@@ -38,9 +38,7 @@ struct LoginView: View {
                         Text("회원가입")
                             .foregroundColor(.black)
                             .font(.custom("NotoSansKR-Regular", size: 18))
-                            .background()
-                            .padding(.bottom, 1.0)
-                            .background(Color.black)
+                            .underline()
                         Spacer()
                     }
                     .padding(.bottom, 29)
