@@ -4,7 +4,6 @@ struct LoginView: View {
     @StateObject var loginViewModel = LoginViewModel()
     var body: some View {
         ZStack {
-            NavigationLink(destination: StudentSignUpView(), isActive: $loginViewModel.isSuccess) { EmptyView() }
             VStack(alignment: .leading, spacing: 0) {
                 Spacer()
                     .frame(height: 113)
@@ -54,6 +53,7 @@ struct LoginView: View {
         }
         .padding(.horizontal, 16)
         .navigationBarHidden(true)
+        .fullScreenCover(isPresented: $loginViewModel.isSuccess, content: { StudentSignUpView() })
     }
 }
 

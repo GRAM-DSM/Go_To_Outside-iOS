@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SelectView: View {
+    @State private var goToStudentSignupView = false
+    @State private var goToTeacherSignupView = false
     var body: some View {
         ZStack {
             VStack(alignment: .leading, spacing: 0) {
@@ -27,7 +29,7 @@ struct SelectView: View {
                         font: .custom("NotoSansKR-Medium", size: 18),
                         backgroundColor: Color.gray1,
                         image: Image("Student"),
-                        action: {}
+                        action: { goToStudentSignupView.toggle() }
                     )
                     Spacer()
                     ImageButtonView(
@@ -35,7 +37,7 @@ struct SelectView: View {
                         font: .custom("NotoSansKR-Medium", size: 18),
                         backgroundColor: Color.gray1,
                         image: Image("Teacher"),
-                        action: {}
+                        action: { goToTeacherSignupView.toggle() }
                     )
                     Spacer()
                 }
@@ -44,6 +46,12 @@ struct SelectView: View {
         }
         .padding(.horizontal, 16)
         .navigationBarHidden(true)
+        .fullScreenCover(isPresented: $goToStudentSignupView, content: {
+            StudentSignUpView()
+        })
+        .fullScreenCover(isPresented: $goToTeacherSignupView, content: {
+            TeacherSignUpView()
+        })
     }
 }
 
